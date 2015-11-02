@@ -1,9 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+.material-input {
+	display: none;
+}
+
 .material-toggle {
     position: relative;
     display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .material-toggle:before {
