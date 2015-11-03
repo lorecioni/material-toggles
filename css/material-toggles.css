@@ -38,10 +38,23 @@ Material Toggles
 	transition: all 0.2s ease-out;
 }
 
-input.material-input:active ~ .material-toggle:after {
+input.material-input:active + .material-toggle:after {
     transform: scale(1.1, .9);
 }
 
+/*** Disabled ***/
+
+input.material-input:disabled + .material-toggle {
+	background-color: rgb(219, 219, 219);
+}
+
+input.material-input:disabled + .material-toggle:after {
+	background-color: rgb(157, 157, 157);
+}
+
+/**************** Colors *********************/
+
+/** Default - Green **/
 
 input.material-input:checked + .material-toggle:after {
     background-color: rgb(0, 112, 86);
@@ -53,8 +66,6 @@ input.material-input:checked + .material-toggle {
     background-color: rgb(147, 206, 192);
 }
 
-/**************** Colors *********************/
-
 /** Blue **/
 
 input.material-input.blue:checked + .material-toggle {
@@ -63,6 +74,16 @@ input.material-input.blue:checked + .material-toggle {
 
 input.material-input.blue:checked + .material-toggle:after {
     background-color: rgb(9, 1, 136);
+}
+
+/** Red **/
+
+input.material-input.red:checked + .material-toggle {
+    background-color: #A7B0F1;
+}
+
+input.material-input.red:checked + .material-toggle:after {
+    background-color: rgb(9, 1, 23);
 }
 
 
